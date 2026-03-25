@@ -157,12 +157,11 @@ export const SEATS = [
 
   // Mesas circulares del centro - 4 sillas cada una
   // Mesa centro 1 (radio 55)
-  { id:'s10', x: 604,  y: 855, tableId:'t4' }, // arriba
+  
   { id:'s11', x: 659,  y: 910, tableId:'t4' }, // derecha  
   { id:'s12', x: 604,  y: 965, tableId:'t4' }, // abajo
-  { id:'s13', x: 549,  y: 910, tableId:'t4' }, // izquierda
+ // izquierda
 
-  // Mesa centro 2 (radio 49)
   { id:'s14', x: 867,  y: 861, tableId:'t5' }, // arriba
   { id:'s15', x: 916,  y: 910, tableId:'t5' }, // derecha
   { id:'s16', x: 867,  y: 959, tableId:'t5' }, // abajo  

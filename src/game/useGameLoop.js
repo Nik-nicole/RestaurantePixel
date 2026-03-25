@@ -92,7 +92,7 @@ export function useGameLoop(canvasRef, imgs, started, characterType = 'boy') {
         _setGameState(GAME_STATE.ORDERING);
         _setMenuOpen(true);
       });
-    });
+    }, player);
   }, [openDialog, _setGameState, _setMenuOpen]);
 
   const _sitDown = useCallback((seat) => {
@@ -175,7 +175,7 @@ export function useGameLoop(canvasRef, imgs, started, characterType = 'boy') {
             setHint('Disfrutando la comida...');
             waiter.returnToPost();
           });
-        });
+        }, playerRef.current);
       }, 250);
     });
   }, [openDialog, _setGameState]);
@@ -260,7 +260,7 @@ export function useGameLoop(canvasRef, imgs, started, characterType = 'boy') {
           setHint('Disfrutando la comida...');
           waiter.returnToPost();
         });
-      });
+      }, player);
     });
   }, [openDialog, _setGameState]);
 
@@ -321,7 +321,7 @@ export function useGameLoop(canvasRef, imgs, started, characterType = 'boy') {
           _setGameState(GAME_STATE.PAYING);
           setPayOpen(true);
         });
-      });
+      }, player);
     });
   }, [openDialog, _setGameState]);
 

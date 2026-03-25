@@ -8,7 +8,7 @@ import waiterFoodImage from '../assets/waiterFood.png';
 
 const SPEAKER_META = {
   player: { name: 'TÚ',          color: '#ffffffff', sprKey: 'player' },
-  waiter: { name: 'MESERO',       color: '#ffffffff', sprKey: 'waiter' },
+  waiter: { name: 'MESERO',       color: '#ffffffff', sprKey: 'waiterB' },
   chef:   { name: 'CHEF MARCO',   color: '#000000', sprKey: 'waiter' },
 };
 
