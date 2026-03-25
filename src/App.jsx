@@ -150,7 +150,10 @@ export default function App() {
         <canvas ref={canvasRef} width={CONFIG.VIEW_W} height={CONFIG.VIEW_H} className="game-canvas" />
         <HUD hint={hint} />
         <DialogBox dialog={dialog} imgs={selectedImgs} onAdvance={advanceDialog} onCancel={exitDialog} />
-        <MenuOverlay open={menuOpen} onConfirm={confirmOrder} onClose={() => setMenuOpen(false)} />
+        <MenuOverlay open={menuOpen} onConfirm={confirmOrder} onClose={() => {
+  setMenuOpen(false);
+  exitDialog();
+}} />
         <YesNoOverlay open={yesNoOpen} data={yesNoData} />
         <PaymentOverlay open={payOpen} total={orderTotal} onCard={payWithCard} onCash={payWithCash} onClose={() => setPayOpen(false)} />
       </div>
