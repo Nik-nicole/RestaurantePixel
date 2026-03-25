@@ -197,8 +197,8 @@ function drawEatingAnim(ctx, imgPlayer, player, cam) {
 }
 
 // ─── DEBUG: mostrar hitboxes y nodos (cambiar a true para ajuste fino) ────────────────
-const DEBUG_WALLS = true;
-const DEBUG_NAV_NODES = true;
+const DEBUG_WALLS = false;
+const DEBUG_NAV_NODES = false;
 
 function drawDebugWalls(ctx, walls, cam) {
   if (!DEBUG_WALLS) return;
