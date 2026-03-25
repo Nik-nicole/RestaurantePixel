@@ -341,9 +341,8 @@ export function drawFrame(ctx, imgs, player, npcs, chef, nearSeat, dialogOpen, m
       const npc = e.ref;
       drawShadow(ctx, npc.x, npc.y, cam);
       
-      // Usar waiterFood2 cuando está sirviendo
-      const waiterImg = gameState === GAME_STATE.SERVING ? imgs.waiterFood2 : imgs.waiter;
-      drawSprite(ctx, waiterImg, SPRITES.waiter, npc.dir, npc.frame, npc.x, npc.y, cam);
+      // Usar siempre waiter (sin waiterFood2)
+      drawSprite(ctx, imgs.waiter, SPRITES.waiter, npc.dir, npc.frame, npc.x, npc.y, cam);
       
       if (!dialogOpen && !menuOpen && npc.isNearPlayer(player)) {
         drawPrompt(ctx, '[ E ] Hablar', npc.x, npc.y, cam);

@@ -5,7 +5,6 @@ import chefImage from '../assets/cheff.png';
 import chefBigImage from '../assets/chefBig.png';
 import waiterBImage from '../assets/waiterB.jpg';
 import waiterFoodImage from '../assets/waiterFood.png';
-import waiterFood2Image from '../assets/waiterFood2.png';
 
 const SPEAKER_META = {
   player: { name: 'TÚ',          color: '#ffffffff', sprKey: 'player' },

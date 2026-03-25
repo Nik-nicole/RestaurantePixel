@@ -17,7 +17,6 @@ import playerGirlSrc from './assets/pLayer2chica.png';
 import waiterSrc from './assets/waiter.jpg';
 import chefSrc   from './assets/cheff.png';
 import waiterBSrc from './assets/waiterB.jpg';
-import waiterFood2Src from './assets/WaiterFood2.png';
 import playerPortraitBoySrc from './assets/playerBig1.png';
 import playerPortraitGirlSrc from './assets/player2.png';
 import musicSrc from './assets/Musica Para Restaurante Elegante.mp3';
@@ -29,9 +28,9 @@ const IMAGE_SOURCES = {
   waiter: waiterSrc,
   chef:   chefSrc,
   waiterB: waiterBSrc,
-  waiterFood2: waiterFood2Src,
   playerPortraitBoy: playerPortraitBoySrc,
   playerPortraitGirl: playerPortraitGirlSrc,
+  music: musicSrc,
 };
 
 export default function App() {
